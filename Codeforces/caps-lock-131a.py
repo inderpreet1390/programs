@@ -1,0 +1,11 @@
+w=list(input())
+if(len(w)>1):
+    if("".join(w[1:]).isupper()):
+        if(w[0].islower()):
+            print(w[0].upper()+"".join(w[1:]).lower())
+        else:
+            print("".join(w).lower())
+    else:
+        print("".join(w))
+else:
+    print(w[0].upper())
